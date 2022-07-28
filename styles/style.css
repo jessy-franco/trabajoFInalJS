@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,600;1,400;1,500&display=swap');
+
+html {
+    font-family: 'EB Garamond', serif;
+    font-size: 62, 5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+
+/* inicia header */
+header {
+    font-family: 'EB Garamond', serif;
+}
+
+.encabezado div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background: rgb(243, 255, 218);
+    background: linear-gradient(0deg, rgba(243, 255, 218, 1) 0%, rgba(221, 255, 188, 1) 100%);
+}
+
+.encabezado div h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+    color: #52734D;
+}
+
+.encabezado div img {
+    padding: 5% 0% 5% 0%;
+}
+
+
+body .zona-1 {
+    width: 100%;
+    height: auto;
+}
+
+body .zona-2 {
+    width: 100%;
+    height: auto;
+}
+
+body .zona-2-desarrollo {
+    background: rgb(226, 250, 202);
+    background: linear-gradient(0deg, rgba(152, 165, 137, 0.774) 2%, rgba(234, 255, 230, 0.772) 61%);
+    width: 100%;
+    height: auto;
+    padding: 4% 1%;
+}
+
+body .zona-2-desarrollo h2.hogarPres {
+    text-align: center;
+    font-size: 2rem;
+    padding: 3%;
+}
+body .zona-2-desarrollo p {
+    padding: 3%;
+    text-align: center;
+    font-size: 1.8rem;
+    font-style: italic;
+    color: #5c7857;
+}
+.marga{
+    margin-left: 35%;
+    width: 400px;
+    height: auto;
+}
+
+
+body .zona-3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #DDFFBC;
+    padding: 2%;
+}
+
+
+body .zona-4 {
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    background: rgba(173, 175, 173, 0.632);
+    background: linear-gradient(0deg, rgb(211, 222, 211) 2%, rgb(226, 243, 223) 96%);
+}
+
+
+body .zona-1 .encabezado div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* aplica a: .background-nav/ */
+.background-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zona-2 {
+    color: whitesmoke;
+    font-weight: bold;
+    text-align: left;
+    font-size: 2.5rem;
+    line-height: 1.6rem;
+    width: 100%;
+    height: auto;
+}
+.zona-2 .presentacion {
+    background-image: url(https://images.pexels.com/photos/2133092/pexels-photo-2133092.jpeg?cs=srgb&dl=pexels-quang-nguyen-vinh-2133092.jpg&fm=jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 20vh;
+    padding: 2% 0% 50% 0%;
+}
+
+body .zona-1 .encabezado div {
+    background-color: rgba(221, 255, 188, 0.831372549);
+    padding: 1%;
+}
+
+body .zona-1 .encabezado div .dino-sucu {
+    padding: 1% 0%;
+    width: 120px;
+    height: 120px;
+}
+h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 3%;
+    color: green;
+}
+li{
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 3%;
+    color: #52734D;
+}
+h3{
+    text-align: end;
+    font-size: 2rem;
+    padding: 3%;
+    color:#2c3d2a;
+}
