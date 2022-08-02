@@ -57,7 +57,7 @@ body .zona-2-desarrollo {
     padding: 4% 1%;
 }
 
-body .zona-2-desarrollo h2.hogarPres {
+body .zona-2-desarrollo .hogarPres {
     text-align: center;
     font-size: 2rem;
     padding: 3%;
@@ -70,11 +70,11 @@ body .zona-2-desarrollo p {
     color: #5c7857;
 }
 .marga{
-    margin-left: 35%;
-    width: 400px;
-    height: auto;
+    margin-left: 40%;
+/*     width: 25%;
+    height: auto; */
+    /* cursor:pointer; */
 }
-
 
 body .zona-3 {
     display: flex;
@@ -154,4 +154,20 @@ h3{
     font-size: 2rem;
     padding: 3%;
     color:#2c3d2a;
+}
+
+body .zona-5{
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    background: linear-gradient(0deg, rgb(126, 168, 119) 2%, rgb(211, 222, 211) 96%);
+}
+body .zona-5 div{
+    display: flex;
+    justify-content: flex-end;
+} 
+body .zona-5 #arrowUpEvent{
+    width: 10%;
+    height: auto;
+    cursor:pointer;
 }
