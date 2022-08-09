@@ -22,18 +22,3 @@ console.log(listaIngresado);
     parrafoSaludo.innerText = "bienvenido"; */
 
 
-/* registrar usuario y luego validar */
-
-/* class registrarUsuario {
-    constructor(usuario, contrasenia){
-        this.usuario = usuario;
-        this.contrasenia = contrasenia;
-
-    }
-}
-registro.onsubmit = (event) => {
-    event.preventDefault()
-    listaRegistrados.push(new registrarUsuario(inputUsuario.value, inputContrasenia.value))
-} */
-
-
