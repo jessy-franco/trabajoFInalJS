@@ -6,6 +6,10 @@ tituloPrincipal.innerText = "Adopta un nuevo miembro en tu familia";
 
 let container = document.querySelector("#contenedor");
 container.innerHTML = `<p> Veni a conocer nuestro vivero de otoño-invierno!!!</p>`;
+container.style.fontSize = "2.2rem"
+container.style.color = "#466142"
+container.style.textAlign = "center"
+container.style.padding = "3%" 
 
 let parrafo = document.createElement("p");
 parrafo.innerHTML = "<h3>¡Veni a conocernos, seguinos en redes!!!!</h3>";
@@ -45,10 +49,12 @@ const carrito = [];
 
 let carrito2 = JSON.parse(localStorage.getItem("carrito")) || []; 
 
-/* Ver productos en el grid */
+/* Ver ofertas en el grid */
+
 
 function verOfertas(elementos) {
-    elementos.forEach(producto => {
+    let productosFiltrados = ofertasIndex.filter(producto => producto.category === "ofertas")
+    productosFiltrados.forEach(producto => {
         ofertaDeProductos.innerHTML += `
         <div class="producto">
             <img src=${producto.img}>
@@ -57,6 +63,7 @@ function verOfertas(elementos) {
         </div>`
     });
 }
+
 
 verOfertas(ofertasIndex)
 
