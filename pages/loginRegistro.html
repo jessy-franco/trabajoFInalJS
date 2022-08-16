@@ -11,10 +11,13 @@
     <!-- LINK BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- link de animation.css/CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Titulo -->
     <title>SucuRex | Vivero artesanal-Cada planta una obra de arte.</title>
 
 </head>
+
 <body>
     <section class="zona-1">
         <header class="encabezado">
@@ -70,35 +73,73 @@
             </nav>
         </header>
     </section>
-        <aside>
-            <h2>
-                Registrese
-            </h2>
-            <form id="registroUser">
-                <label for="usuario">
-                    Usuario
-                </label>
-                <input type="text" id="nuevoUsuario" name="usuario" />
-                <label for="contrasenia">
-                    Contraseña
-                </label>
-                <input type="password" id="nuevaPassword" name="contrasenia" />
-                <label>
-                    <input type="submit" value="enviar" />
-                </label>
-            </form>
-            <p id="saludo2"></p>
-        </aside>
-        <main>
-            <div class="portada2">
-                <h1 id="ingresaste2" class="primerSaludo"></h1>
+    <aside>
+        <h2>
+            Registrese
+        </h2>
+        <form id="registroUser">
+            <label for="usuario">
+                Usuario
+            </label>
+            <input type="text" id="nuevoUsuario" name="usuario" />
+            <label for="contrasenia">
+                Contraseña
+            </label>
+            <input type="password" id="nuevaPassword" name="contrasenia" />
+            <label>
+                <input type="submit" value="enviar" />
+            </label>
+        </form>
+        <p id="saludo2"></p>
+    </aside>
+    <main>
+        <div class="portada2">
+            <h1 id="ingresaste2" class="primerSaludo"></h1>
+        </div>
+        <section class="botones">
+            <div class="op1">
+                <a href="../pages/loginIngreso.html">Ingrese y confirme su usuario</a>
             </div>
-            <section class="botones">
-                <div class="op1">
-                    <a href="../pages/loginIngreso.html" >Ingrese y confirme su usuario</a>
+        </section>
+    </main>
+    <footer class="zona-6">
+        <section class="mini-grid">
+            <!--REDES-->
+            <section class="redes">
+                <h3> <strong>Seguinos!!!</strong></h3>
+                <div>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="../imagenes/instagram.webp" alt="instagram logo" width="80%" height="auto">
+                    </a>
+                    <a href="https://m.facebook.com/login/?locale=es_ES" target="_blank">
+                        <img src="../imagenes/facebook.webp" alt="facebook logo" width="80%" height="auto">
+                    </a>
+                    <a href="https://web.whatsapp.com/" target="_blank">
+                        <img src="../imagenes/whatsapp.webp" alt="whatsaap logo" width="80%" height="auto">
+                    </a>
                 </div>
             </section>
-        </main>
+
+            <!--UBICACION -->
+            <div class="mapa">
+                <div>
+                    <h3>Donde estamos</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105062.72944038223!2d-58.453165314624016!3d-34.62412562970116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca440ec19097%3A0x30b34282ae8fae18!2sParque%20Rivadavia!5e0!3m2!1ses-419!2sar!4v1648933887335!5m2!1ses-419!2sar"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        title="Dirección comercial"></iframe>
+                </div>
+            </div>
+        </section>
+        <!--fin UBICACION y redes-->
+        <!--PIECITO-->
+        <section class="pie">
+            <small>Todos los derechos reservados/Vivero SucuRex 2022
+                <sup>®</sup>
+            </small>
+        </section>
+        <!--fin PIECITO-->
+    </footer>
     <script src="../js/loginRegistro.js"></script>
     <!-- script bootstap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
@@ -108,4 +149,5 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

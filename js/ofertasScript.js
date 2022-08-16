@@ -9,7 +9,7 @@ container.innerHTML = `<p> Veni a conocer nuestro vivero de otoño-invierno!!!</
 container.style.fontSize = "2.2rem"
 container.style.color = "#466142"
 container.style.textAlign = "center"
-container.style.padding = "3%" 
+container.style.padding = "3%"
 
 let parrafo = document.createElement("p");
 parrafo.innerHTML = "<h3>¡Veni a conocernos, seguinos en redes!!!!</h3>";
@@ -45,9 +45,9 @@ function cambioImg() {
 
 let ofertaDeProductos = document.querySelector("#productos")
 
-const carrito = [];
+const carrito = []
 
-let carrito2 = JSON.parse(localStorage.getItem("carrito")) || []; 
+let carrito2 = JSON.parse(localStorage.getItem("carrito")) || [];
 
 /* Ver ofertas en el grid */
 
@@ -79,13 +79,16 @@ function agregarAlCarrito(e) {
     const idBoton = boton.getAttribute("id");
     let productoSeleccionado = ofertasIndex.find(producto => producto.id === idBoton)
     carrito.push(productoSeleccionado)
-    console.log(carrito)
-    
+
     //storage
     localStorage.setItem("carrito", JSON.stringify(carrito));
 
-    alert("Agregaste " + productoSeleccionado.name + " al carrito")
 
+    swal({
+        title: "Agregaste al carrito",
+        text: ` ${productoSeleccionado.name} `,
+        icon: "success",
+    });
     mostrarCarrito()
 }
 for (boton of botonPush) {
@@ -119,25 +122,26 @@ function mostrarCarrito() {
 
     //vaciar carrito
     vaciarCarro.addEventListener("click", () => {
-        carrito = []
+        carrito2 = []
         localStorage.clear()
         divCarrito.innerHTML = ""
     })
 
     let terminarCompra = document.createElement("button")
     terminarCompra.setAttribute("class", "terminarCompra")
-    terminarCompra.innerHTML=("Finalizar compra")
+    terminarCompra.innerHTML = ("Finalizar compra")
     divCarrito.append(terminarCompra)
 
 
     terminarCompra.addEventListener("click", () => {
-        window.location.href = "../pages/carrito.html"
+        window.location.href = "pages/carrito.html"
     })
 }
 carrito.length && mostrarCarrito()
 
 
-//ELIMINAR PRODUCTO
+/*Botn para eliminar un producto */
+
 function eliminarProducto(e) {
     divCarrito.innerHTML = ""
     const botonX = e.target;
@@ -148,85 +152,3 @@ function eliminarProducto(e) {
     localStorage.setItem("carrito", JSON.stringify(carrito))
     mostrarCarrito(carrito)
 }
-/* function agregarProductosAlCarro(e) {
-    contenedorCarrito.innerHTML = "";
-    const boton = e.target;
-    const idBoton = boton.getAttribute("id");
-    let productoElegido = ofertasIndex.find(elemento => elemento.id === idBoton) 
-
-    localStorage.setItem("carrito", JSON.stringify(carrito));
-    alert("Agregaste " + productoElegido.name + " al carrito")
-
-    mostrarCarrito()
-}
-botonAgregar.addEventListener("click", agregarProductosAlCarro)  */
-
-/* mostrar el carrito */
-
-/* function mostrarCarrito() {
-    carrito.forEach(producto => {
-        contenedorCarrito.innerHTML += `
-            <div class="productoCarrito">
-                <img src=${producto.img}>
-                <h2>${producto.name}   $${producto.price}</h2>
-                <button class="botonBorrar" id="${producto.id}">X</button>
-            </div>
-            `
-    })
-}
- */
-
-/* while (carrito != "") {
-    let total = carrito.reduce((acc, curr) => acc + parseInt(curr.price), 0)
-    /* let total = carritoDeCompras.reduce((a, b) => a + parseInt (b.price), 0) */
-/*   let totalCompra = document.createElement("p")
-  totalCompra.setAttribute("class", "total")
-  totalCompra.innerText = ("Total: " + total)
-  contenedorCarrito.append(totalCompra)
-  console.log(carrito)
-
-}  */
-/* let total = carrito.reduce((a, b) => a + (b.precio), 0)
-let totalCompra = document.createElement("p")
-totalCompra.setAttribute("class", "total")
-totalCompra.innerText = ("Total: " + total)
-contenedorCarrito.append(totalCompra) */
-/* 
-let botonBorrar = document.getElementsByClassName("botonBorrar")
-
-
-for (botonX of botonBorrar) {
-    botonX.addEventListener("click", eliminarProducto)
-}
-
-//vaciar carrito
-vaciar.addEventListener("click", () => {
-    carrito = []
-    localStorage.clear()
-    contenedorCarrito.innerHTML = ""
-})
-
-let terminarCompra = document.createElement("button")
-terminarCompra.setAttribute("class", "terminarCompra")
-terminarCompra.innerHTML = ("Finalizar compra")
-contenedorCarrito.append(terminarCompra)
-
-terminarCompra.addEventListener("click", () => {
-    window.location.href = "../pages/carrito.html"
-})
-
-
-carrito.length && mostrarCarrito()
-
-
-//ELIMINAR PRODUCTO
-function eliminarProducto(productos) {
-    contenedorCarrito.innerHTML = ""
-    const botonX = productos.target;
-    const idBotonX = botonX.getAttribute("id");
-    let indexProducto = carrito.findIndex(producto => producto.id === idBotonX)
-    carrito.splice(indexProducto, 1)
-    localStorage.removeItem("carrito")
-    localStorage.setItem("carrito", JSON.stringify(carrito))
-    mostrarCarrito(carrito)
-} */

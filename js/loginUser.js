@@ -1,7 +1,7 @@
 
 const loginSesion = document.querySelector("#login");
-const loginUser = document.querySelector("#usuario");
-const passIngreso = document.querySelector("#password");
+const loginUser = document.querySelector("#exampleInputEmail1");
+const passIngreso = document.querySelector("#exampleInputPassword1");
 const main = document.querySelector("main");
 const asideDeFormulario = document.querySelector("aside");
 
