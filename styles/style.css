@@ -673,7 +673,7 @@ main .portada2 {
     height: auto;
     border: 2px solid #2c3d2a;
     padding: 2%;
-    margin: 0 0 2% 2%;
+    margin: 0 0 2% 25%;
 }
 
 .form-ubicacion h3 {
@@ -697,4 +697,38 @@ main .portada2 {
     gap: 15px;
     background-color: #c2ffd1;
 
+}
+
+/* contacto html */
+
+.zona-2-desarrollo .ficha div {
+    background-color: rgba(254, 255, 222, 0.498);
+    padding: 5% 5% 8% 5%;
+}
+
+.form-style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 16%;
+
+}
+
+.form-style input {
+    width: 80%;
+    height: auto;
+    border: 2px solid gainsboro;
+}
+
+.form-style textarea {
+    width: 80%;
+    height: auto;
+    border: 2px solid gainsboro;
+}
+
+.form-style .button-send {
+    width: 30%;
+    height: auto;
+    margin: 10% 0 10% 24%;
+    border: 2px solid lightgrey;
 }
