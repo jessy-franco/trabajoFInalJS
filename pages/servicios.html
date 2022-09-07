@@ -39,7 +39,7 @@
     <!-- Inicia header -->
     <section class="zona-1">
         <header class="encabezado">
-            <div class="logos">
+            <div class="logos divColor">
                 <img src="../imagenes/dinosaurio.png" alt="logo"
                     class="animate__animated animate__backInLeft dino-sucu">
                 <img src="../imagenes/Vivero-SucuRex.png" alt="vivero-logo" width="250px" height="auto"
@@ -47,7 +47,7 @@
                 <img src="../imagenes/planta.png" alt="plantalo"
                     class="animate__animated animate__backInRight dino-sucu">
             </div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light background-nav ">
                 <div class="container-fluid ">
                     <a class="navbar-brand naveg logoNav" href="#">Navbar</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -60,27 +60,14 @@
                                 <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../pages/productos.html">Productos</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link active" href="../pages/servicios.html">Servicios</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Login
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="../pages/loginIngreso.html">Ingresar</a></li>
-                                    <li><a class="dropdown-item" href="../pages/loginRegistro.html">Registrarse</a>
-                                    </li>
-                                </ul>
-                            </li>
+                        
                             <li class="nav-item">
-                                <a class="navbar-brand" href="../pages/carrito.html">
+                                <a class="navbar-brand" href="../index.html">
                                     <img src="../imagenes/anadir-al-carrito.png" alt="carrito de compras icono"
                                         width="30" height="30">
                                 </a>
@@ -100,7 +87,7 @@
             </div>
         </section>
     </section>
-    <section class="zona-2-desarrollo">
+    <section class="zona-2-desarrollo background-desarrollo">
         <div class="muestra">
             <h2>Ofrecemos</h2>
             <p>Conservamos y proveemos el mantenimiento adecuado de sus áreas verdes, realizando trabajos de
@@ -218,6 +205,8 @@
                     las
                     plantas.</li>
             </ul>
+            <p class="info">Para más información sobre el curso o inscripciones contactate con nosotros </p>
+            <a href="../pages/contacto.html"> Contacto</a>
             </div>
         </section>
         <section class="zona-4-capa">
@@ -231,12 +220,19 @@
                     como sus cuidados y mantenimiento, nociones sobre técnicas de riego automatizado, podado y
                     características del suelo, todo ello a nivel profesional.</p>
                 <h4>Inscribase hoy a nuestros cursos 2022!!!</h4>
-                <img src="../imagenes/sucu4.webp" alt="Macetines de pequeñas suculentas en estanteria de madera"
-                    width="80%" height="auto">
+                <img class="img-capa" src="../imagenes/sucu4.webp" alt="Macetines de pequeñas suculentas en estanteria de madera" width="80%" height="auto">
+                <img  class="img-capa" src="../imagenes/pexels-ketut-subiyanto-4132363 (2).jpg" alt="mujer plantando una planta ficus en una maceta de ceramica" width="80%" height="auto">
             </div>
         </section>
     </section>
-    <section class="zona-5">
+    <section class="zona-4-comentarios" >
+        <h2>Nuestros trabajos hablan por nosotros</h2>
+        <h3>Nuestros clientes nos recomiendan!!!</h3>
+        <div id="comentarios" class="comentariosDiv" >
+
+        </div>
+    </section>
+    <section class="zona-5 flecha-servicios">
         <div>
             <img src="../imagenes/circulo-de-flecha-hacia-arriba.svg" id="arrowUpEvent" alt="flecha-Hacia-Arriba">
         </div>
@@ -293,6 +289,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
+        <script src="../js/servicios.js" ></script>
 </body>
 
 </html>

@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,600;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 html {
-    font-family: 'EB Garamond', serif;
+    font-family: 'Lato', sans-serif;
     font-size: 62, 5%;
+    overflow-x: hidden;
 }
 
 * {
@@ -17,14 +18,12 @@ header {
     font-family: 'EB Garamond', serif;
 }
 
-.encabezado div {
+.encabezado .divColor {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     height: auto;
-    background: rgb(243, 255, 218);
-    background: linear-gradient(0deg, rgba(243, 255, 218, 1) 0%, rgba(221, 255, 188, 1) 100%);
 }
 
 .talleLetra li a {
@@ -42,14 +41,14 @@ header {
     padding-right: 23% !important
 }
 
-.encabezado div h1 {
+.encabezado .divColor h1 {
     text-align: center;
     font-size: 3rem;
     font-style: italic;
     color: #52734D;
 }
 
-.encabezado div img {
+.encabezado .divColor img {
     padding: 5% 0% 5% 0%;
 }
 
@@ -65,7 +64,6 @@ body .zona-2 {
 }
 
 body .zona-2-desarrollo {
-    background: linear-gradient(0deg, rgb(143, 146, 140) 4%, rgba(197, 216, 174, 0.774) 80%);
     width: 100%;
     height: auto;
     padding: 4% 1%;
@@ -82,13 +80,10 @@ body .zona-2-desarrollo {
 }
 
 .zona-2-desarrollo div .talle {
-    width: 70%;
+    width: 100%;
     height: auto;
 }
 
-.zona-2-desarrollo div .talle .car-in .car-item .tip-color h3 {
-    color: whitesmoke;
-}
 
 .zona-2-desarrollo div .talle .car-in .car-item .tip-color h3 {
     color: whitesmoke;
@@ -99,7 +94,9 @@ body .zona-2-desarrollo {
     padding: 0.5% 3%;
     font-style: oblique;
     text-decoration: underline;
+    background-color: #52734dd9
 }
+
 
 .zona-2-desarrollo div .talle .car-in .car-item .tip-color p {
     color: #DDFFBC;
@@ -109,6 +106,13 @@ body .zona-2-desarrollo {
     font-style: italic;
     font-weight: 550;
     padding: 0.5% 3%;
+    background-color: #52734dd9
+}
+
+.zona-2-desarrollo div .talle .car-in .car-item .tip-color h2 {
+    margin-bottom: 40%;
+    color: whitesmoke;
+    background-color: #52734dd9;
 }
 
 body .zona-2-desarrollo .hogarPres {
@@ -122,9 +126,21 @@ body .zona-2-desarrollo .hogarPres {
 body .zona-2-parrafo {
     padding: 3%;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-style: italic;
-    color: #5c7857;
+    font-weight: bold;
+    color: #466142;
+    background-image: url(https://images.pexels.com/photos/1470171/pexels-photo-1470171.jpeg?cs=srgb&dl=pexels-element-digital-1470171.jpg&fm=jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+body .zona-2-parrafo p {
+    background-color: #ddffbc6b;
+    width: 100%;
+    height: auto;
 }
 
 body .zona-3 {
@@ -132,7 +148,7 @@ body .zona-3 {
     flex-direction: column;
     width: 100%;
     height: auto;
-    background-color: #DDFFBC;
+    /*  background-color: #DDFFBC; */
     padding: 2%;
 }
 
@@ -141,8 +157,8 @@ body .zona-4 {
     width: 100%;
     height: auto;
     padding: 2%;
-    background: rgba(173, 175, 173, 0.632);
-    background: linear-gradient(0deg, rgb(211, 222, 211) 2%, rgb(226, 243, 223) 96%);
+    /*  background: rgba(173, 175, 173, 0.342); */
+    background: linear-gradient(0deg, rgba(211, 222, 211, 0.343) 2%, rgba(226, 243, 223, 0.241) 96%);
 }
 
 .zona-4 .productosGallery {
@@ -200,6 +216,43 @@ body .zona-4 {
     text-transform: uppercase;
     font-size: 2rem;
     color: #5c7857;
+}
+
+/* Zona productos dentro del index */
+.filtro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filtro a {
+    text-decoration: none;
+    font-style: italic;
+    text-transform: uppercase;
+    color: black;
+    font-size: 1.3rem;
+    border: #2c3d2a 2px solid;
+    border-radius: 2rem;
+    padding: 2%;
+}
+
+.filtro a:hover {
+    transform: scale(0.9);
+}
+
+.filtro button {
+    border-style: none;
+    background-color: transparent;
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.filtro button:hover {
+    border-bottom: 1px grey solid;
 }
 
 .zona-6 .mini-grid {
@@ -292,17 +345,9 @@ body .zona-4 {
 }
 
 
-body .zona-1 .encabezado div {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 /* aplica a: .background-nav/ */
-.background-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+nav li {
+    margin-left: 11%;
 }
 
 .zona-2 {
@@ -325,12 +370,13 @@ body .zona-1 .encabezado div {
     padding: 2% 0% 50% 0%;
 }
 
-body .zona-1 .encabezado div {
-    background-color: rgba(221, 255, 188, 0.831372549);
+body .zona-1 .encabezado .divColor {
+    background: rgb(77, 134, 74);
+    background: radial-gradient(circle, rgb(77 134 74 / 82%) 0%, rgba(162, 199, 134, 0.6759746134782038) 100%);
     padding: 1%;
 }
 
-body .zona-1 .encabezado div .dino-sucu {
+body .zona-1 .encabezado .divColor .dino-sucu {
     padding: 1% 0%;
     width: 120px;
     height: 120px;
@@ -359,9 +405,9 @@ h3 {
 
 body .zona-5 {
     width: 100%;
-    height: auto;
+    height: auto; 
     padding: 2%;
-    background: linear-gradient(0deg, rgb(126, 168, 119) 2%, rgb(211, 222, 211) 96%);
+    background-color: #CDC2BA;
 }
 
 body .zona-5 div {
@@ -510,16 +556,26 @@ main .portada2 {
     height: auto;
 }
 
+.background-desarrollo {
+    background-image: url(https://images.pexels.com/photos/5876818/pexels-photo-5876818.jpeg?cs=srgb&dl=pexels-marta-wave-5876818.jpg&fm=jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
 .zona-2-desarrollo .muestra {
     display: flex;
     flex-direction: column;
+    background-color: #f5f5f5ba;
+    width: 98%;
+    height: auto;
 
 }
 
 .zona-2-desarrollo .muestra p {
     padding: 3%;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-style: italic;
     color: #5c7857;
 }
@@ -531,8 +587,8 @@ main .portada2 {
 
 .zona-2-desarrollo div ul li {
     text-align: center;
-    font-size: 1.5rem;
-    line-height: 2.5rem;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
     font-style: italic;
     font-weight: 550;
     padding: 3%;
@@ -570,7 +626,7 @@ main .portada2 {
     grid-area: zona-3-capa;
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 3;
+    grid-row-start: 2;
     grid-row-end: 4;
     width: 100%;
     height: auto;
@@ -584,6 +640,26 @@ main .portada2 {
     font-style: italic;
     color: #466142;
     padding: 1% 3% 2% 3%;
+}
+
+.zona-3-capa .info {
+    padding: 3%;
+    text-align: center;
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #5c7857;
+}
+
+.zona-3-capa a {
+    border: 2px solid #5c7857;
+    border-radius: 15%;
+    padding: 1%;
+    margin-left: 40%;
+    text-align: center;
+    font-size: 1.3rem;
+    font-style: italic;
+    text-decoration: none;
+    color: #5c7857;
 }
 
 .zona-3-capa ul li {
@@ -615,28 +691,74 @@ main .portada2 {
     padding: 6% 0 4% 0;
 }
 
+.zona-4-capa .img-capa {
+    margin-top: 2%;
+}
+
+.zona-4-comentarios {
+    background-color: #a2c7866e;
+}
+
+.zona-4-comentarios h2 {
+    background-color: #4D864A;
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+.zona-4-comentarios h3 {
+    display: flex;
+    justify-content: center;
+    background-color: #4D864A;
+    color: whitesmoke;
+}
+
+.zona-5 .flecha-servicios {
+    width: 96%;
+    height: auto;
+    padding: 2%;
+    background-color: #CDC2BA;
+}
+
+
 /* carrito.html */
 .encabezadoCompra {
-    width: 80%;
+    width: 98%;
     height: 30vh;
 }
 
-.encabezadoCompra h1 {
+.tituloCompra {
+    margin-bottom: 5%;
+}
+
+.tituloCompra h1 {
     text-align: center;
     font-style: italic;
     font-size: 2rem;
     padding: 2%;
-    margin-left: 15%;
+    margin-left: 7%;
 }
 
-.encabezadoCompra a {
+.tituloCompra a {
     text-decoration: none;
     color: #2c3d2a;
     text-align: center;
     border: 1px solid gray;
     border-radius: 10%;
-    margin-left: 50%;
+    margin-left: 46%;
     padding: 1%;
+}
+
+.tituloCompra h2 {
+    width: 50%;
+}
+
+.tituloCompra button {
+    color: #2c3d2a;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 10%;
+    margin-left: 2%;
+    padding: 1%
 }
 
 .carritoCompra {
@@ -644,7 +766,7 @@ main .portada2 {
     flex-direction: row;
     justify-content: space-between;
     gap: 2rem;
-    width: 90%;
+    width: 98%;
     height: auto;
 }
 
@@ -666,6 +788,49 @@ main .portada2 {
 .detalleImg {
     width: 40%;
     height: auto;
+}
+
+.container-form {
+    width: 45%;
+    height: auto;
+    background-color: #cdc2ba;
+    margin-bottom: 2%;
+}
+
+.finalizar-compra {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.8rem;
+    padding: 9% 0;
+    color: #101110;
+}
+
+.form-style2 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: 5%;
+    width: 84%;
+    background-color: #fffcfcd6;
+    height: auto;
+    margin: 9%;
+}
+
+.input-style {
+    border-style: none;
+    border-bottom: 2px black solid;
+    background-color: #fffcfc;
+    text-align: center;
+    padding: 2%;
+    margin: 2%;
+}
+
+.cuadro-confirm {
+    margin-top: 2%;
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 5%;
 }
 
 .form-ubicacion {

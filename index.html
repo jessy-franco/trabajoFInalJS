@@ -22,7 +22,7 @@
     <header>
         <section class="zona-1">
             <header class="encabezado">
-                <div>
+                <div class="divColor">
                     <img src="imagenes/dinosaurio.png" alt="logo"
                         class="animate__animated animate__backInLeft dino-sucu">
                     <img src="imagenes/Vivero-SucuRex.png" alt="vivero-logo" width="250px" height="auto"
@@ -44,27 +44,14 @@
                                     <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="pages/productos.html">Productos</a>
-                                </li>
-                                <li class="nav-item">
                                     <a class="nav-link" href="pages/servicios.html">Servicios</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="pages/contacto.html">Contacto</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Login
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="pages/loginIngreso.html">Ingresar</a></li>
-                                        <li><a class="dropdown-item" href="pages/loginRegistro.html">Registrarse</a>
-                                        </li>
-                                    </ul>
-                                </li>
+
                                 <li class="nav-item">
-                                    <a class="navbar-brand" href="pages/carrito.html">
+                                    <a class="navbar-brand" href="#carritoDiv">
                                         <img src="imagenes/anadir-al-carrito.png" alt="carrito de compras icono"
                                             width="30" height="30">
                                     </a>
@@ -78,24 +65,14 @@
         <!-- fin nav  -->
         <!-- FIN HEADER -->
     </header>
-    <section class="zona-2">
-        <section class="presentacion">
-            <div>
-                <h1 id="titulo">Adopta una planta, dale vida a tu hogar</h1>
-            </div>
-        </section>
-    </section>
     <section class="zona-2-desarrollo">
         <div>
             <strong>
-                <h2 class="hogarPres">Un hogar con plantas es maravilloso!!!</h2>
+                <h1 class="hogarPres" id="titulo">Un hogar con plantas es maravilloso!!!</h1>
             </strong>
             <div id="contenedor">
             </div>
-            <div class="sub-titulo">
-                <h3>Productos</h3>
-            </div>
-            <div id="carouselExampleCaptions" class="carousel slide container talle" data-bs-ride="carousel"
+            <div id="carouselExampleCaptions" class="carousel slide container-fluid talle" data-bs-ride="carousel"
                 data-interval="1000">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -136,6 +113,8 @@
                         <img src="galeriaIndex/1-plantas/1.webp" class="d-block w-100"
                             alt="Osteospermun, margarita africana naranja">
                         <div class="carousel-caption d-none d-md-block tip-color">
+                            <h2 class="comienzo">Bienvenidos a vivero SucuRex...Te ayudamos a elegir tu proxima
+                                planta!!!</h2>
                             <h3>PLANTAS DE TEMPORADA</h3>
                             <p>Temporada de frio/de calor</p>
                         </div>
@@ -144,6 +123,7 @@
                         <img src="galeriaIndex/1-plantas/2.webp" class="d-block w-100"
                             alt="Cactus, suculenta y planta de interior deco hogar">
                         <div class="carousel-caption d-none d-md-block tip-color">
+                            <h2 class="comienzo">Para darle vida a tu hogar</h2>
                             <h3>PLANTAS DE INTERIOR</h3>
                             <p>Incluye informacion sobre exposicion al sol y riego.</p>
                         </div>
@@ -152,6 +132,7 @@
                         <img src="galeriaIndex/1-plantas/3.webp" class="d-block w-100"
                             alt="Frutal de vivero en maceta de 15lts">
                         <div class="carousel-caption d-none d-md-block tip-color">
+                            <h2 class="comienzo">Para enbellecer tu jardin</h2>
                             <h3>PLANTAS DE EXTERIOR</h3>
                             <p>Arboles, arbustos, frutales,etc.</p>
                         </div>
@@ -160,6 +141,7 @@
                         <img src="galeriaIndex/1-plantas/4.webp" class="d-block w-100"
                             alt="Ejemplares de suculentas y cactus en pequeñas macetas, expuestas en estanteria de madera">
                         <div class="carousel-caption d-none d-md-block tip-color">
+                            <h2 class="comienzo">Para coleccionistas y aficionados!</h2>
                             <h3>CÁCTUS Y SUCULENTAS</h3>
                             <p>incluye guia de cuidados.</p>
                         </div>
@@ -168,6 +150,7 @@
                         <img src="galeriaIndex/1-plantas/5.webp" class="d-block w-100"
                             alt="Plantas aromaticas y plantines de huerta en macetas de bizcocho rojo">
                         <div class="carousel-caption d-none d-md-block tip-color">
+                            <h2 class="comienzo">Para apasionados del cultivo</h2>
                             <h3>PLANTAS DE HUERTA, AROMATICOS.</h3>
                             <p>incluye guia de cuidados, venta de semillas.</p>
                         </div>
@@ -175,6 +158,7 @@
                     <div class="carousel-item car-item">
                         <img src="galeriaIndex/1-plantas/6.webp" class="d-block w-100" alt="Pan de cesped enrollado">
                         <div class="carousel-caption d-none d-md-block tip-color">
+                            <h2 class="comienzo">Una alfombra natural a tus pies</h2>
                             <h3>CÉSPED</h3>
                             <p>Panes, semillas, variedades.</p>
                         </div>
@@ -183,6 +167,7 @@
                         <img src="galeriaIndex/2-macetas/1.webp" class="d-block w-100"
                             alt="Estanteria en el taller de macetas de bizcocho ceramico, macetas de diferentes talles">
                         <div class="carousel-caption d-none d-md-block tip-color">
+                            <h2 class="comienzo">La Meyor variedad en: </h2>
                             <h3>MACETAS DE CERAMICA/BARRO</h3>
                             <p>Diferentes tamaños, esmaltadas y sin esmaltar.</p>
                         </div>
@@ -191,6 +176,7 @@
                         <img src="galeriaIndex/2-macetas/2.webp" class="d-block w-100"
                             alt="Exposicion de macetas, maceta de plastico reciclado, maceta de bizcocho ceramico y ceramica esmaltada. Diferentes tamaños, con cactus y suculentas en su interior">
                         <div class="carousel-caption d-none d-md-block tip-color">
+                            <h2 class="comienzo">Variedad y calidad! Eternas</h2>
                             <h3>DE PLASTICO RECILADO</h3>
                             <p>Tamaños de 10 al 20.</p>
                         </div>
@@ -199,6 +185,7 @@
                         <img src="galeriaIndex/2-macetas/3.webp" class="d-block w-100"
                             alt="Maceta rectangular y de poca profundidad, de ceramica esmaltada en blanco. Posee la forma y elegancia perfecta para el cultivo de bonsais">
                         <div class="carousel-caption d-none d-md-block tip-color">
+                            <h2 class="comienzo">Para especialistas y amantes del bonsai</h2>
                             <h3>MACETAS DE BONSAI</h3>
                             <p>De céramica, plastico, concreto..</p>
                         </div>
@@ -207,6 +194,7 @@
                         <img src="galeriaIndex/2-macetas/4.webp" class="d-block w-100"
                             alt="Taller de macetas de biscocho ceramico y esculturas decorativas para jardines, amplios tamaños, formas y colores">
                         <div class="carousel-caption d-none d-md-block tip-color">
+                            <h2 class="comienzo">Gigantes y perdurables</h2>
                             <h3>MACETAS DE CONCRETO, ESTATUAS Y FUENTES DE JARDIN</h3>
                             <p>Tamaños xxl preparados para exterior.</p>
                         </div>
@@ -215,6 +203,7 @@
                         <img src="galeriaIndex/2-macetas/5.webp" class="d-block w-100"
                             alt="Imagen ilustrativa. Decoracion del hogar con pequeñas plantas de interior. Carteleria deco...haz lo que amas ">
                         <div class="carousel-caption d-none d-md-block tip-color">
+                            <h2 class="comienzo">Para detallistas y miniciosas manos</h2>
                             <h3>MACETAS MINI.</h3>
                             <p>Macetas para pequeñas plantas.</p>
                         </div>
@@ -223,6 +212,7 @@
                         <img src="galeriaIndex/3-insumos/1.webp" class="d-block w-100"
                             alt="Mesa de trabajo, transplante de plantas, macetas, herramientas de jardineria y guantes">
                         <div class="carousel-caption d-none d-md-block tip-color">
+                            <h2 class="comienzo">La mejor calidad, para trabajos pequeños</h2>
                             <h3>HERRAMIENTAS PARA MACETAS</h3>
                             <p>Pequeñas herramientas para maceta, tijeras de cortes precisos, guantes.</p>
                         </div>
@@ -231,6 +221,7 @@
                         <img src="galeriaIndex/3-insumos/2.webp" class="d-block w-100"
                             alt="Abonando el jardin. Imagen ilustrativa.">
                         <div class="carousel-caption d-none d-md-block tip-color">
+                            <h2 class="comienzo">Alimento para plantas en sus mejores versiones</h2>
                             <h3>SUSTRATOS.</h3>
                             <p>Tierra, abono, resaca, compost, minerales.</p>
                         </div>
@@ -239,6 +230,7 @@
                         <img src="galeriaIndex/3-insumos/3.webp" class="d-block w-100"
                             alt="Insumos varios, bandeja para riego, abono, regadera y plantas. ">
                         <div class="carousel-caption d-none d-md-block tip-color">
+                            <h2 class="comienzo">Detalles que hacen la diferencia</h2>
                             <h3>VARIOS</h3>
                             <p>Bandejas de cultivo, rociadores, regaderas.</p>
                         </div>
@@ -247,6 +239,7 @@
                         <img src="galeriaIndex/3-insumos/4.webp" class="d-block w-100"
                             alt="Herramientas de jardineria. Variedad">
                         <div class="carousel-caption d-none d-md-block tip-color">
+                            <h2 class="comienzo">La mejor seleccion para trabajo de jardin</h2>
                             <h3>HERRAMIENTAS EXTERIOR</h3>
                             <p>Palitas, palas, desmalecedores, tijeras de podar.</p>
                         </div>
@@ -255,6 +248,7 @@
                         <img src="galeriaIndex/3-insumos/5.webp" class="d-block w-100"
                             alt="Tomates de huerta cultivados en invernadero">
                         <div class="carousel-caption d-none d-md-block tip-color">
+                            <h2 class="comienzo">Lo mejor seleccionado por nuestros expertos</h2>
                             <h3>TODO PARA SU HUERTA</h3>
                             <p>Abono, sustrato especial, manta para heladas, libros informativos.</p>
                         </div>
@@ -272,21 +266,9 @@
                 </button>
             </div>
     </section>
-    </section>
     <section class="zona-2-parrafo">
-        <p>Si hay plantas hay vida. Es por ello que llenamos nuestras casas «de verde», tenemos huertos urbanos y
-            las
-            terrazas están pobladas de pequeñas macetas. Aunque las plantas requieran muchos cuidados "no solo
-            regarlas,
-            sino también debemos preocuparnos de en qué lugar ponerlas para que tengan la mejor luz, darles
-            nutrientes,
-            pulverizarlas..." seguimos comprándolas y regalándolas.</p>
-        <p>Y es que, las plantas siempre han formado parte de nuestra vida. La especie humana ha evolucionado en un
-            ambiente natural, en la que se cumplen los ciclos vitales: los animales crecen, las flores pasan de flor
-            a
-            fruto... nuestro entorno perfecto es tradicionalmente la naturaleza, y por ello colmar de plantas
-            nuestro
-            hogar es un paso natural.</p>
+        <p>Si hay plantas hay vida. Y es que, las plantas siempre han formado parte de nosotros. Sumale vida a tu
+            hogar!!!</p>
         <img src="imagenes/feliz (1).png" class="dinoPlanta" onclick="cambioImag()" width="20%" height="auto"
             alt="iconoDinoKawaii">
         </div>
@@ -296,75 +278,103 @@
         <div id="ofertas" class="promociones"></div>
     </section>
     <section class="zona-4">
-        <div id="productos" class="productosGallery">
-
+        <a name="productos"></a>
+        <div class="filtro">
+            <a href="#carrito">Ver carrito</a>
         </div>
+        <section id="productos2" class="zona-4  productosGallery2">
+
+        </section>
     </section>
-    <section id="miCarrito">
-        <div>
-            <h2 class="tituloCarrito">
-                Carrito
-            </h2>
+    <section id="miCarrito" class="encabezadoCompra">
+        <a name="carritoDiv"></a>
+        <div class="tituloCompra">
+            <h1>Finalizar compra</h1>
+            <a href="#productos" class="seguir">Seguir comprando</a>
+            <a name="carrito"></a>
+            <h2>Detalle de compra</h2>
             <button id="vaciar">Vaciar carrito</button>
         </div>
-        <div id="carrito">
 
-        </div>
-    </section>
-    <section class="zona-5">
-        <div>
-            <img src="imagenes/circulo-de-flecha-hacia-arriba.svg" id="arrowUpEvent" alt="flecha-Hacia-Arriba">
-        </div>
-    </section>
-    <footer class="zona-6">
-        <section class="mini-grid">
-            <!--REDES-->
-            <section class="redes">
-                <h3> <strong>Seguinos!!!</strong></h3>
-                <div>
-                    <a href="https://www.instagram.com/" target="_blank">
-                        <img src="imagenes/instagram.webp" alt="instagram logo" width="80%" height="auto">
-                    </a>
-                    <a href="https://m.facebook.com/login/?locale=es_ES" target="_blank">
-                        <img src="imagenes/facebook.webp" alt="facebook logo" width="80%" height="auto">
-                    </a>
-                    <a href="https://web.whatsapp.com/" target="_blank">
-                        <img src="imagenes/whatsapp.webp" alt="whatsaap logo" width="80%" height="auto">
-                    </a>
-                </div>
-            </section>
+        <section class="carritoCompra">
+            <div id="detalleDeCompra" class="detalleProductos">
+            </div>
+            <div class="container-form">
+                <form id="form" class="form-compra">
+                    <h3 class="finalizar-compra">Finaliza la compra con tus datos</h3>
+                    <div class="form-style2">
+                        <input type="hidden" name="compra_number">
+                        <input type="text" name="user-name" placeholder="Nombre y apellido" id="nombre2"
+                            class="input-style">
+                        <input type="email" name="user-email" placeholder="Mail" id="mail2" class="input-style">
+                        <input type="text" name="user-phone" placeholder="Telefono" id="telefono2" class="input-style">
+                        <input type="text" name="user-direccion" placeholder="Direccion" id="direccion2"
+                            class="input-style">
+                        <input type="submit" value="Finalizar compra" id="submit" class="botonFinalizar">
+                    </div>
+                </form>
+                <div id="confirmacion2" class="cuadro-confirm">
 
-            <!--UBICACION -->
-            <div class="mapa">
-                <div>
-                    <h3>Donde estamos</h3>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105062.72944038223!2d-58.453165314624016!3d-34.62412562970116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca440ec19097%3A0x30b34282ae8fae18!2sParque%20Rivadavia!5e0!3m2!1ses-419!2sar!4v1648933887335!5m2!1ses-419!2sar"
-                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                        title="Dirección comercial"></iframe>
                 </div>
             </div>
+
         </section>
-        <!--fin UBICACION y redes-->
-        <!--PIECITO-->
-        <section class="pie">
-            <small>Todos los derechos reservados/Vivero SucuRex 2022
-                <sup>®</sup>
-            </small>
+        <section class="zona-5">
+            <div>
+                <img src="imagenes/circulo-de-flecha-hacia-arriba.svg" id="arrowUpEvent" alt="flecha-Hacia-Arriba">
+            </div>
         </section>
-        <!--fin PIECITO-->
-    </footer>
-    <script src="js/ofertasDeIndex.js"></script>
-    <script src="js/ofertasScript.js"></script>
-    <!-- script bootstap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-        crossorigin="anonymous"></script>
-    <!-- script de sweet alert -->
-    <script src=" https://unpkg.com/sweetalert/dist/sweetalert.min.js "> </script>
+        <footer class="zona-6">
+            <section class="mini-grid">
+                <!--REDES-->
+                <section class="redes">
+                    <h3> <strong>Seguinos!!!</strong></h3>
+                    <div>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="imagenes/instagram.webp" alt="instagram logo" width="80%" height="auto">
+                        </a>
+                        <a href="https://m.facebook.com/login/?locale=es_ES" target="_blank">
+                            <img src="imagenes/facebook.webp" alt="facebook logo" width="80%" height="auto">
+                        </a>
+                        <a href="https://web.whatsapp.com/" target="_blank">
+                            <img src="imagenes/whatsapp.webp" alt="whatsaap logo" width="80%" height="auto">
+                        </a>
+                    </div>
+                </section>
+
+                <!--UBICACION -->
+                <div class="mapa">
+                    <div>
+                        <h3>Donde estamos</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105062.72944038223!2d-58.453165314624016!3d-34.62412562970116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca440ec19097%3A0x30b34282ae8fae18!2sParque%20Rivadavia!5e0!3m2!1ses-419!2sar!4v1648933887335!5m2!1ses-419!2sar"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" title="Dirección comercial"></iframe>
+                    </div>
+                </div>
+            </section>
+            <!--fin UBICACION y redes-->
+            <!--PIECITO-->
+            <section class="pie">
+                <small>Todos los derechos reservados/Vivero SucuRex 2022
+                    <sup>®</sup>
+                </small>
+            </section>
+            <!--fin PIECITO-->
+        </footer>
+        <script src="js/ofertasDeIndex.js"></script>
+        <script src="js/ofertasScript.js"></script>
+        <!-- script bootstap -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"></script>
+        <!-- script de sweet alert -->
+        <script src=" https://unpkg.com/sweetalert/dist/sweetalert.min.js "> </script>
+        <!-- script toastify -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 
 </html>

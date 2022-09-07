@@ -10,21 +10,26 @@ window.onload = function () {
 
         this.contact_number.value = Math.random() * 100000 | 0;
         
-        fetch('https://api.emailjs.com/api/v1.0/email/send-form', {
-            method: 'POST',
-            body: formData,
-        })
+    
+        emailjs.sendForm('contact_service', 'contact_form', this)
         .then(function () {
             swal({
-                title: "Tu consulta fue enviada",
+                title: "Tu consulta fue enviada con exito",
                 icon: "success",
             });
-        })
-        .catch(function (error) {
+
+        }, function (error) {
             swal({
                 title: "Error del servidor, vuelva a intentar",
                 icon: "warning",
             });
-        });
+        })
+        
     });
 }
+
+/* flecha hacia arriba */
+
+arrowUpEvent.onclick = function () {
+    window.scrollTo(scrollY, 0);
+};
